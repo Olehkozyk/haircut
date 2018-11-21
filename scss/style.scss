@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700|Oswald:400,700&subset=cyrillic');
+@font-face{
+	font-family: 'Celtic';
+	src: url(../fonts/CelticGaramondthe2nd.woff) format('woff');
+	src: url(../fonts/CelticGaramondthe2nd.woff2) format('woff2');
+	font-weight: normal;
+    font-style: normal;
+
+
+}
+body{
+	font: 400 18px/1.3888 'Open Sans', sans-serif;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1210px;
+	position: relative;
+	z-index: 1;
+	
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	color: #F9F4F4;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	text-decoration: none;
+	color:	#F9F4F4;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-header{
+	padding-top: 51px;
+	padding-bottom: 25px;
+	background-color: #CE3A4B;
+	
+	
+	&__menu{
+		position: relative;
+		ul{
+			list-style: none;
+			display: flex;
+			padding: 0;
+			margin: 0;
+			font-size: 14px;
+			li{
+				border-bottom: 1px solid transparent;
+				text-transform: uppercase;
+			}
+			li + li{
+				margin-left: 76px;
+				
+			}
+			li:hover{
+				border-bottom: 1px solid#F9F4F4;
+				transition: border .3s ease-in;
+			}
+		}
+		h1{
+			text-transform: uppercase;
+			margin-bottom: 18px;
+			font-size: 47px;
+			font-family: 'Celtic', sans-serif;
+			word-spacing: 28px;
+		}
+	}
+}
+.ba-flex-end{
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+
+}
+.ba-header__logo{
+	position: absolute;
+	content: '';
+	background: no-repeat;
+	left: 0;
+	
+	top: -10px;
+	
+}
+.ba-section-change{
+	padding: 562px 0 70px;
+	background-image: url(../img/photo_women.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.ba-portfolio-btn{
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+
+	& h2{
+		font: 400 48px/1 'Oswald', sans-serif;
+		color: #223A44;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		margin-bottom: 50px;
+		margin-right: 28.5px;
+	}
+	& a{
+		font: 700 24px/1 'Oswald', sans-serif;
+		border: 2px solid #F9F4F4;
+		text-align: center;
+		width: 370px;
+		padding: 15px 0 ;
+		text-transform: uppercase;
+		position: relative;
+	}
+	& a:hover{
+		background: #CE3A4B;
+		border: 2px solid transparent;
+	}
+	& a::after{
+		position: absolute;
+		content: '';
+		width: 0;
+	height: 0;
+	border-bottom: 26px solid #CE3A4B; 
+	border-left: 25px solid transparent;
+	right: -2px;
+	bottom: -2px;
+	}
+}
+.ba-about-us{
+	background: #223A44;
+	padding-top: 122px;
+	padding-bottom: 69px;
+	position: relative;
+	overflow: hidden;
+	
+}
+.ba-about-us::after{
+	position: absolute;
+	content: '';
+	left: -42px;
+	top: -87px;
+	width: 774px;
+	height: 232px;
+	background: #CE3A4B;
+	transform: rotate(-12deg);
+	
+}
+.ba-about-us::before{
+	position: absolute;
+	content: '';
+	right: 0;
+	top: 69px;
+	width: 98px;
+	height: 1px;
+	background: #F9F4F4;
+}
+.ba-about{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: #F9F4F4;
+	margin-bottom: 44px;
+	& p{
+		max-width: 568px;
+		margin: 0;
+		margin-right: 33px;
+		font-size: 18px;
+
+	}
+	& span{
+		font: 400 24px/1 'Oswald', sans-serif;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+}
+.ba-flex{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	& h3{
+		font: 700 64px/1 'Open Sans', sans-serif;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
+}
+.ba-we-do{
+	& ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		& li{
+			color: #F9F4F4;
+			font: 400 18px/1 'Oswald', sans-serif;
+			position: relative;
+		}
+		& li + li::before{
+			position: absolute;
+			content: '';
+			width: 10px;
+			height: 10px;
+			background: #CE3A4B;
+			border-radius: 50%;
+			left: -35px;
+			bottom: 1px;
+		}
+		& li + li{
+			margin-left: 56px;
+		}
+	}
+}
+.ba-salon{
+	background: #223A44;
+	padding-bottom: 150px;
+	&__img{
+		display: inline-block;
+		line-height: 0;
+		
+	}
+}
+
+.ba-graph__flex{
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	margin-top: -63px;
+	margin-bottom: 57px;
+	& .ba-col-2 + .ba-col-2{
+		margin-left: 30px;
+	}
+}
+.ba-graph{
+	text-align: center;
+	background:#BFC0C2;
+	padding: 12px 0 38px;
+	& h6{
+		color: #223A44;
+		font: 700 18px/1 'Oswald', sans-serif;
+		margin-bottom: 19px;
+		
+	}
+	& span{
+		color: #F9F4F4;
+		font: 700 18px/1 'Oswald', sans-serif;
+		background: #CE3A4B;
+		position: relative;
+		z-index: 2;
+	}
+	& span::before, span::after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 150%;
+	background-color: #CE3A4B;
+	}
+	& span::before{
+		left: -70px;
+		z-index: -1;
+	}
+	& span::after{
+		right: -70px;
+		z-index: -1;
+	}
+}
+
+.ba-graph-holiday{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	& h6{
+		color: #223A44;
+		font: 700 18px/1 'Oswald', sans-serif;
+		
+		background: #BFC0C2;
+		display: inline-block;
+		width: 166px;
+		height: 110px;
+		text-align: center;
+		padding-top: 10px;
+		transform: rotate(-10deg);
+		position: relative;
+
+	}
+	& h6::after{
+		position: absolute;
+		content: 'выходной';
+		top: 43%;
+		left: -60px;
+		width: 294px;
+		background: #CE3A4B;
+		transform: rotate(10deg);
+		color: #F9F4F4;
+		font: 700 18px/1 'Oswald', sans-serif;
+	}
+}
+.ba-salon-info{
+	background: #223A44;
+	padding-bottom: 56px;
+	text-align: center;
+	z-index: 1;
+	position: relative;
+	& a {
+		display: inline-block;
+		font: 700 24px/1 'Oswald', sans-serif;
+		border: 2px solid #F9F4F4;
+		text-align: center;
+		width: 370px;
+		padding: 15px 0 ;
+		text-transform: uppercase;
+		position: relative;
+	}
+	& a:hover{
+		background: #CE3A4B;
+		border: 2px solid transparent;
+	}
+	& a::after{
+		position: absolute;
+		content: '';
+		width: 0;
+	height: 0;
+	border-bottom: 26px solid #CE3A4B; 
+	border-left: 25px solid transparent;
+	right: -2px;
+	bottom: -2px;
+	}
+	& h5{
+		font: 400 24px/1 'Oswald', sans-serif;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		text-align: right;
+		margin: 147px 0 61px;
+		
+	}
+	
+	& h4{
+		font: 400 24px/1 'Oswald', sans-serif;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		text-align: right;
+		margin-bottom: 78px;
+	}
+	&__block{
+		background: #BFC0C2;
+		padding: 24px 0 49px;
+		max-height: 270px;
+		& h4 {
+			text-align: center;
+			margin-bottom: 19px;
+			font: 400 24px/1 'Oswald', sans-serif;
+			color: #223A44;
+			
+	
+		}
+		
+		
+		
+		& p{
+			max-width: 273px;
+			margin: 0 auto;
+			margin-top: 18px;
+		}	
+	}
+}
+.ba-salon-info::after{
+	display: inline-block;
+	position: absolute;
+	content: '';
+	width: 96px;
+	height: 1px;
+	bottom: 13%;
+	right: 0;
+	background: #F9F4F4;
+
+}
+.ba-block-bg{
+	position: absolute;
+	content: '';
+	width: 1045px;
+	height: 616px;
+	background: #CE3A4B;
+	transform: rotate(7deg);
+	z-index: -1;
+	top: 48px;
+	left: 76px;
+}
+.ba-team-comand{
+	text-align: right;
+	font: 700 64px/1 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+.ba-btn-sing__up{
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 165px;
+}
+.ba-team-info{
+	background: #BFC0C2;
+	padding: 75px 0;
+	& h3{
+		padding: 41px 0 45px;
+		text-align: right;
+		background: #223A44;
+	}
+}
+.ba-team {
+	display: flex;
+	justify-content: space-between;
+	&__block{
+		max-width: 470px ;
+	}
+	&__people{
+		
+		& h6{
+			text-align: right;
+			font: 700 18px/1 'Oswald', sans-serif;
+			color: #223A44;
+			margin-bottom: 44px;
+
+		}
+	}
+}
+.ba-photo-social{
+	position:relative;
+	
+	&--facebook{
+		display: inline-block;
+		position: absolute;
+		content: "";
+		top: 105px;
+		right: 23px;
+		width: 35px;
+		height: 35px;
+		color: #F9F4F4;
+	}
+	&--insta{
+		display: inline-block;
+		position: absolute;
+		content: "";
+		top: 40px;
+		right: 23px;
+		width: 35px;
+		height: 35px;
+		color: #F9F4F4;
+		& svg{
+			fill: #CE3A4B;
+		}
+	}
+}
