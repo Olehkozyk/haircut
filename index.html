@@ -31,9 +31,9 @@
 				<ul class="ba-header__nav">
 					<li><a href="#salon">Салон</a></li>
 					<li><a href="#about_us">О нас</a></li>
-					<li><a href="#team">Команда</a></li>
-					<li><a href="#service">Услуги</a></li>
-					<li><a href="#conect-f">Контакты</a></li>
+					<li><a href="#anchor-team">Команда</a></li>
+					<li><a href="#anchor-service">Услуги</a></li>
+					<li><a href="#anchor-contact">Контакты</a></li>
 					<li><a href="#">Записаться</a></li>
 				</ul>
 			</div>
@@ -65,9 +65,11 @@
 		</div>
 		<!-- /.ba-container -->
 	</section>
-	<section class="ba-about-us" id="about_us">
+	<section class="ba-about-us" >
 		<div class="ba-container ">
 			<div class="ba-flex">
+			<div class="ba-anchor__about" id="about_us"></div>
+			<!-- /.ba-anchor__about -->
 			<h3>О нас</h3>
 			<h4 class="ba-about__adaptive">Мы рады вам помочь</h4>
 			<div class="ba-about">
@@ -243,12 +245,21 @@
 			
 		</div>
 		<!-- /.ba-btn-sing__up -->
-		<h3 class="ba-team-comand" id="team">Команда</h3>
+	
 		
 		</div>
 		<!-- /.ba-container -->
 	</section>
 	<section class="ba-team-info" >
+		<div class="ba-anchor__team">
+			<div id="anchor-team"></div>
+			<!-- /.anchor -->
+			<div class="ba-container">
+					<h3 class="ba-team-comand" id="team">Команда</h3>
+			</div>
+			<!-- /.ba-container -->
+		</div>
+		<!-- /.ba-anchor__team -->
 		<div class="ba-container">
 			<div class="ba-team">
 				<div class="ba-team__block">
@@ -327,32 +338,58 @@
 		</div>
 		<!-- /.ba-container -->
 	</section>
-	<section class="ba-service" id="service">
+	<section class="ba-service">
 		<div class="ba-container">
-		<h2>Услуги</h2>
 		<div class="ba-price">
-			<ul>
-				<li>Стрижка женская ...............................  <span>140 - 180 грн.</span> </li>
-				<li>Укладка ................................................ <span>60 - 100 грн.</span></li>
-				<li>Окрашивание ONE ............................<span>100 - 140 грн.</span></li>
-				<li>Окрашивание MIX .............................<span>300 - 600 грн.</span></li>
-				<li>Окрашивание COLOR .......................<span>400 - 700 грн.</span></li>
-				<li>Прическа .............................................<span>200 - 350 грн.</span></li>
-				<li>Стрижска мужская .............................<span>100 грн.</span></li>
-				<li>Камуфляж седины .............................<span>100 грн.</span></li>
-				<li>Лечение волос ...................................<span>от 350 грн.</span></li>
+			<div class="service" id="anchor-service"></div>
+				<h2>Услуги</h2>
+				<div class="ba-list-price">
+			<ul class="ba-name-list">
+				<li>Стрижка женская ...................<span class="mobile-adaptive-list">.........................</span><span class="list-adaptive">....................</span></li>
+				<li>Укладка ....................................<span class="mobile-adaptive-list">.........................</span><span class="list-adaptive">....................</span></li>
+				<li>Окрашивание ONE ................<span class="mobile-adaptive-list">.........................</span><span class="list-adaptive">....................</span></li>
+				<li>Окрашивание MIX .................<span class="mobile-adaptive-list">.........................</span><span class="list-adaptive">....................</span></li>
+				<li>Окрашивание COLOR ...........<span class="mobile-adaptive-list">.........................</span><span class="list-adaptive">....................</span></li>
+				<li>Прическа .................................<span class="mobile-adaptive-list">.........................</span><span class="list-adaptive">....................</span></li>
+				<li>Стрижка мужская ...................<span class="mobile-adaptive-list">.........................</span><span class="list-adaptive">....................</span></li>
+				<li>Камуфляж седины .................<span class="mobile-adaptive-list">.........................</span><span class="list-adaptive">....................</span></li>
+				<li>Лечение волос .......................<span class="mobile-adaptive-list">.........................</span><span class="list-adaptive">....................</span></li>
 			</ul>
-			
+			<ul class="ba-cash-price">
+				<li>140-180 грн.</li>
+				<li>60-100 грн.</li>
+				<li>100-140 грн.</li>
+				<li>300-600 грн.</li>
+				<li>400-700 грн.</li>
+				<li>200-350 грн.</li>
+				<li>100 грн.</li>
+				<li>100 грн.</li>
+				<li>140-180 грн.</li>
+			</ul>
+		</div>
+		<!-- /.ba-list-price -->
 		</div>
 		<!-- /.ba-price -->
-		<h2>Контакты</h2>
+		
 	</div>
 	<!-- /.ba-container -->
-	<div class="ba-bg-block" ></div>
-	<!-- /.ba-bg-block -->
+	
 		
 	</section>
-	<section class="ba-connect-form"  id="conect-form">
+	<section class="ba-anchor__form">
+			<div class="ba-bg-block"></div>
+			<!-- /.ba-bg-block -->
+		<div class="ba-contact-anchor">
+			<div class="ba-container">
+				
+				<div id="anchor-contact"></div>
+				<h2>Контакты</h2>
+			</div>
+			<!-- /.ba-container -->
+		</div>
+		<!-- /.ba-contact-anchor --></section>
+	<section class="ba-connect-form"  >
+		
 		<div class="ba-container">
 			<div class="ba-flex-form">
 			<div class="ba-form">
@@ -411,11 +448,11 @@
 						<li><a href="#about_us">О нас</a></li>
 					</ul>
 					<ul>
-						<li><a href="#team">Команда</a></li>
-						<li><a href="#service">Услуги</a></li>
+						<li><a href="#anchor-team">Команда</a></li>
+						<li><a href="#anchor-service">Услуги</a></li>
 					</ul>
 					<ul>
-						<li><a href="#contact">Контакты</a></li>
+						<li><a href="#anchor-contact">Контакты</a></li>
 						<li><a href="#">Портфолио</a></li>
 					</ul>
 				</div>
