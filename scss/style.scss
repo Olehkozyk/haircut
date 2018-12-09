@@ -1355,11 +1355,63 @@ background-repeat: no-repeat;
 	}
 }
 @media screen and (max-width: 660px){
+	.ba-footsocial{
+		
+		justify-content: center;
+		&__soc{
+			padding-left: 0;
+		}
+		&__email{
+			display: none;
+		}
+		&__tel{
+			display: none;
+		}
+	}
+	.ba-footinfo{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&__menu{
+			padding-top: 0;
+			flex-direction: column;
+			ul + ul{
+				margin-left: 0;
+			}
+			ul{
+				text-align: center;
+			}
+		}
+		&__street{
+			display: none;
+		}
+	}
+	.ba-footinfo__logo{
+		padding-top: 0;
+		max-width: 150px ;
+		margin-bottom: 10px;
+		img{
+			width: 46px;
+			height: 46px;
+		}
+		h2{
+			margin-left: 5px;
+			font-size: 13px;
+		}
+	}
+	.ba-connect__info{
+		padding: 20px 20px 18px;
+	}
+	.ba-connect__img{
+		display: none;
+	}
 	.ba-form{
 		padding: 15px;
+		margin-bottom: 10px;
 	}
 	.ba-flex-form{
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.ba-bg-block{
 		width: 184px;
