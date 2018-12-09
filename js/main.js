@@ -11,7 +11,7 @@ $(function(){
         nextArrow: ".ba-slider__next",
         variableWidth: true,
         centerMode: true,
-        adaptiveHeight: true,
+        // adaptiveHeight: true,
         
     })
 });

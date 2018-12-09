@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700|Oswald:400,700&subset=cyrillic');
-
+@import "slick";
 @font-face{
 	font-family: 'Celtic';
 	src: url(../fonts/CelticGaramondthe2nd.woff) format('woff');
@@ -7,7 +7,7 @@
 	font-weight: normal;
     font-style: normal;
 
-	@import "slick.scss";
+
 }
 html{
 	 scroll-behavior: smooth;
@@ -78,9 +78,7 @@ textarea {
 }
 .ba-salon__img{
 	position: relative;
-	max-width: 1170px;
-	max-height: 814px;
-	overflow: hidden;
+
 
 	a{
 		position: absolute;
