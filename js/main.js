@@ -13,6 +13,22 @@ $(function(){
         centerMode: true,
         // adaptiveHeight: true,
         
+    });
+    $('.ba-haircut-slide').slick({
+        slide: "div",
+        vertical: true,
+        verticalSwiping: true,
+        infinity: true,
+        slidesToScroll: 1,
+        slidesToShow: 2,
+        dots: false,
+    
+        prevArrow: ".ba-prev-hair",
+        nextArrow: ".ba-next-hair",
+    
+
+        adaptiveHeight: true,
+        
     })
 });
 })(jQuery);
