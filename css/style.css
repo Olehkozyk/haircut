@@ -147,6 +147,11 @@ select {
   background: #223A44;
   right: 2%;
   bottom: 2%; }
+  .ba-next-hair:hover::before {
+    border-top: 17px solid #CE3A4B;
+    -webkit-transition: border-color 0.3s ease-in;
+    -o-transition: border-color 0.3s ease-in;
+    transition: border-color 0.3s ease-in; }
   .ba-next-hair::before {
     position: absolute;
     top: 19px;
@@ -168,6 +173,11 @@ select {
   background: #223A44;
   right: 2%;
   bottom: 12%; }
+  .ba-prev-hair:hover::before {
+    border-bottom: 17px solid #CE3A4B;
+    -webkit-transition: border-color 0.3s ease-in;
+    -o-transition: border-color 0.3s ease-in;
+    transition: border-color 0.3s ease-in; }
   .ba-prev-hair::before {
     position: absolute;
     top: 13px;
@@ -201,6 +211,8 @@ select {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px; }
+  .ba-img__block:focus {
+    outline: none; }
 
 .ba-section-slide {
   padding: 18px 0 19px;

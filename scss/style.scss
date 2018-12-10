@@ -90,6 +90,12 @@ textarea {
 	background: #223A44;
 	right: 2%;
 	bottom: 2%;
+	&:hover{
+		&::before{
+		border-top: 17px solid #CE3A4B;
+		transition: border-color .3s ease-in,
+		}
+	}
 	&::before{
 		position: absolute;
 		top: 19px;
@@ -112,6 +118,12 @@ textarea {
 	background: #223A44;
 	right: 2%;
 	bottom: 12%;
+	&:hover{
+		&::before{
+		border-bottom: 17px solid #CE3A4B;
+		transition: border-color .3s ease-in,
+		}
+	}
 	&::before{
 		position: absolute;
 		top: 13px;
@@ -122,6 +134,7 @@ textarea {
 		border-right: 10px solid transparent;
 		border-bottom: 17px solid #fff;
 		content: '';
+	
 	}
 }
 .ba-haircut-slide{
@@ -138,7 +151,9 @@ textarea {
 	}
 }
 .ba-img__block{
-	
+	&:focus{
+		outline: none;
+	}
 	flex-direction: row;
 	display: flex;
 	margin-bottom: 10px;
