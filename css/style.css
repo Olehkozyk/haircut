@@ -146,7 +146,7 @@ select {
   border-radius: 50%;
   background: #223A44;
   right: 2%;
-  bottom: 2%; }
+  bottom: 25px; }
   .ba-next-hair:hover::before {
     border-top: 17px solid #CE3A4B;
     -webkit-transition: border-color 0.3s ease-in;
@@ -172,7 +172,7 @@ select {
   border-radius: 50%;
   background: #223A44;
   right: 2%;
-  bottom: 12%; }
+  bottom: 90px; }
   .ba-prev-hair:hover::before {
     border-bottom: 17px solid #CE3A4B;
     -webkit-transition: border-color 0.3s ease-in;
@@ -189,30 +189,23 @@ select {
     border-bottom: 17px solid #fff;
     content: ''; }
 
-.ba-haircut-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative; }
+.ba-map {
+  height: 700px;
+  width: 100%;
+  z-index: 0; }
 
-.slick-vertical .slick-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .slick-vertical .slick-slide img + img {
-    margin-left: 31px; }
+.slick-slide img {
+  display: inline-block;
+  width: 100%; }
 
-.ba-img__block {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.ba-img-slid img {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
   margin-bottom: 10px; }
-  .ba-img__block:focus {
-    outline: none; }
+
+.ba-img__block:focus {
+  outline: none; }
 
 .ba-section-slide {
   padding: 18px 0 19px;
@@ -889,31 +882,25 @@ select {
       border-radius: 50%; }
 
 .ba-connect-form {
-  padding: 50px 0 72px;
-  background: url(../img/Screenshot_map.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
+  position: relative; }
 
 .ba-connect {
-  max-width: 570px; }
-
-.ba-flex-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start; }
+  z-index: 2;
+  max-width: 570px;
+  position: absolute;
+  top: 40px;
+  right: 40px; }
 
 .ba-form {
   padding: 33px 39px 50px;
   background: #B2BBBA;
   color: #223A44;
   text-align: center;
-  max-width: 470px; }
+  max-width: 470px;
+  position: absolute;
+  z-index: 2;
+  left: 40px;
+  top: 40px; }
   .ba-form h3 {
     text-transform: uppercase;
     color: #223A44;
@@ -1119,82 +1106,6 @@ select {
     .ba-footsocial__soc a:hover {
       color: #CE3A4B; }
 
-#menuToggle {
-  display: none;
-  overflow: hidden;
-  position: absolute;
-  padding: 7px;
-  background: #BFC0C2;
-  height: 47px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  right: 25px;
-  bottom: -8px; }
-
-#menuToggle input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0;
-  /* hide input */
-  z-index: 1;
-  /* top of the menu */ }
-
-#menuToggle span + span {
-  margin-top: 10px; }
-
-#menuToggle span {
-  width: 29px;
-  height: 3px;
-  background: #223A44;
-  border-radius: 4px;
-  -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -moz-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -ms-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  -o-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
-  transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71); }
-
-#span1 {
-  -webkit-transform-origin: 4px 0px;
-  -ms-transform-origin: 4px 0px;
-  transform-origin: 4px 0px; }
-
-#span3 {
-  -webkit-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
-  transform-origin: bottom right; }
-
-#menuToggle input:checked ~ #span1 {
-  background-color: #0c2461;
-  -webkit-transform: rotate(45deg) translate(8px);
-  -ms-transform: rotate(45deg) translate(8px);
-  transform: rotate(45deg) translate(8px); }
-
-#menuToggle input:checked ~ #span2 {
-  background-color: #0c2461;
-  -webkit-transform: rotate(495deg) translate(4px);
-  -ms-transform: rotate(495deg) translate(4px);
-  transform: rotate(495deg) translate(4px); }
-
-#menuToggle input:checked ~ #span3 {
-  background-color: #0c2461;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  opacity: 0; }
-
 .ba-menu-adaptive {
   z-index: 100;
   position: fixed;
@@ -1202,7 +1113,70 @@ select {
   height: 100%;
   background: rgba(34, 58, 68, 0.94);
   padding-top: 67px;
-  display: none; }
+  display: block;
+  -webkit-transform: translateY(calc(-100% - 1000px));
+  -ms-transform: translateY(calc(-100% - 1000px));
+  transform: translateY(calc(-100% - 1000px));
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; }
+
+.ba-open {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  display: block;
+  visibility: visible; }
+
+.ba-click #span1 {
+  -webkit-transform: translateY(9px) rotate(45deg);
+  -ms-transform: translateY(9px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg); }
+
+.ba-click #span3 {
+  -webkit-transform: translateY(-9px) rotate(-45deg);
+  -ms-transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg); }
+
+.ba-click #span2 {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px); }
+
+.menu-toggle {
+  overflow: hidden;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 35px;
+  height: 30px;
+  background: #BFC0C2;
+  border: none;
+  padding: 5px;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  z-index: 5; }
+  .menu-toggle span {
+    height: 3px;
+    width: 100%;
+    background-color: #223A44;
+    border-radius: 5px;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out; }
 
 .ba-menu-resp ul {
   text-align: center;
@@ -1218,6 +1192,10 @@ select {
   display: none; }
 
 @media screen and (max-width: 1024px) {
+  .menu-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .ba-connect__info {
     padding: 20px 0 18px; }
     .ba-connect__info h2 {
@@ -1231,8 +1209,6 @@ select {
       font-size: 11px; }
   .ba-connect__img {
     height: 180px; }
-  .ba-connect-form {
-    padding-top: 36px; }
   .ba-btn-form button {
     padding: 10px 0 11px;
     max-width: 166px; }
@@ -1447,9 +1423,15 @@ select {
     display: none; } }
 
 @media screen and (max-width: 660px) {
-  .ba-slider__next {
-    display: none; }
-  .ba-slider__prev {
+  .ba-form {
+    position: relative;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    margin-bottom: 0; }
+    .ba-form form input {
+      max-width: 100%; }
+  .ba-connect {
     display: none; }
   .ba-footsocial {
     -webkit-box-pack: center;
@@ -1499,8 +1481,7 @@ select {
   .ba-connect__img {
     display: none; }
   .ba-form {
-    padding: 15px;
-    margin-bottom: 10px; }
+    padding: 15px; }
   .ba-flex-form {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1651,18 +1632,6 @@ select {
     display: none; }
   .ba-section-change {
     padding: 142px 0 0; }
-  #menuToggle input:checked ~ #span2 {
-    -webkit-transform: rotate(495deg) translate(0px);
-    -ms-transform: rotate(495deg) translate(0px);
-    transform: rotate(495deg) translate(0px); }
-  #menuToggle {
-    bottom: 0;
-    height: 32px;
-    padding: 6px; }
-  #menuToggle span {
-    width: 18px; }
-  #menuToggle span + span {
-    margin-top: 7px; }
   .ba-header {
     padding: 8px 0; }
     .ba-header__logo {

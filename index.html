@@ -19,12 +19,11 @@
 
 	<header class="ba-header">
 		<div class="ba-container ba-flex-end">
-				<div id="menuToggle">
-						<input type="checkbox" name="menu-nav">
+				<button class="menu-toggle">
 						<span id="span1"></span>
 						<span id="span2"></span>
 						<span id="span3"></span>
-					</div>
+					</button>
 			<img class="ba-header__logo" src="img/logoheader-logo.png" alt="logo">
 			<div class="ba-header__menu">
 				<h1>Iryna Kobushko</h1>
@@ -48,9 +47,9 @@
 			<ul>
 					<li><a href="#salon">Салон</a></li>
 					<li><a href="#about_us">О нас</a></li>
-					<li><a href="#team">Команда</a></li>
-					<li><a href="#service">Услуги</a></li>
-					<li><a href="#conect-f">Контакты</a></li>
+					<li><a href="#anchor-team">Команда</a></li>
+					<li><a href="#anchor-service">Услуги</a></li>
+					<li><a href="#anchor-contact">Контакты</a></li>
 					<li><a href="#">Записаться</a></li>
 			</ul>
 		</div>
@@ -397,10 +396,8 @@
 		</div>
 	</section>
 	<section class="ba-connect-form"  >
-		<!-- <div id="ba-map-form"></div> -->
-		<!-- /.ba-map-form -->
-		<div class="ba-container">
-			<div class="ba-flex-form">
+		
+
 			<div class="ba-form">
 				<h3>Форма Обратной связи</h3>
 				<p>Оставьте нам сообщение и наш менеджер<br> 
@@ -437,10 +434,8 @@
 				<!-- /.ba-connect__img -->
 			</div>
 			<!-- /.ba-connect -->
-		</div>
-		<!-- /.ba-flex-form -->
-		</div>
-		<!-- /.ba-container -->
+			<div id="map" class="ba-map"></div>
+
 	</section>
 </main>
 	<footer class="ba-footer">
@@ -506,6 +501,7 @@
 		<!-- /.ba-container -->
 	</footer>
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BvGQbN1ahxfHjgxzrwMh6zzJs_NQzHU"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 
