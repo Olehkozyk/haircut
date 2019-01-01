@@ -1233,6 +1233,9 @@ position: relative;
 }
 
 @media screen and (max-width: 1024px){
+	.ba-list-header-hair{
+		display: none;
+	}
 	.menu-toggle{
 		display: flex;
 	}
@@ -1574,6 +1577,29 @@ position: relative;
 	}
 }
 @media screen and (max-width: 660px){
+	.ba-section-hair{
+		padding: 0;
+		padding-top: 25px;
+	}
+	.ba-hair{
+		flex-direction: column;
+	}
+	.ba-hair__block{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 45px;
+		
+	
+	}
+	.ba-menu-resp{
+		ul{
+			li{
+				font-size: 12px;
+			}
+		}
+	}
 	.ba-form{
 		position: relative;
 		left: 0;

@@ -82,12 +82,12 @@ $(function(){
  $(document).ready(function(){
     $('.ba-img__block').slick({
         rows: 1,
-        slidesPerRow: 4,
-        slide: (".ba-img-slid"),
-        infinity: false,
+        // slidesPerRow: 4,
+        slide: (".ba-img-vert"),
+        // infinity: false,
         slidesToScroll: 1,
-        // slidesToShow: 4,
-        //variableWidth: true,
+        slidesToShow: 1,
+        // variableWidth: true,
         // adaptiveHeight:true,
         vertical: true,
         // verticalSwiping: true,

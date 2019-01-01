@@ -1192,6 +1192,8 @@ select {
   display: none; }
 
 @media screen and (max-width: 1024px) {
+  .ba-list-header-hair {
+    display: none; }
   .menu-toggle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1423,6 +1425,29 @@ select {
     display: none; } }
 
 @media screen and (max-width: 660px) {
+  .ba-section-hair {
+    padding: 0;
+    padding-top: 25px; }
+  .ba-hair {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .ba-hair__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 45px; }
+  .ba-menu-resp ul li {
+    font-size: 12px; }
   .ba-form {
     position: relative;
     left: 0;
