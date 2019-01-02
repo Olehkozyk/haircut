@@ -88,7 +88,7 @@ textarea {
 	height: 50px;
 	border-radius: 50%;
 	background: #223A44;
-	right: 2%;
+	right: 5%;
 	bottom: 25px;
 	&:hover{
 		&::before{
@@ -116,7 +116,7 @@ textarea {
 	height: 50px;
 	border-radius: 50%;
 	background: #223A44;
-	right: 2%;
+	right: 5%;
 	bottom: 90px;
 	&:hover{
 		&::before{
@@ -151,27 +151,30 @@ textarea {
 // 	}
 // }
 .slick-slide{
-	
+	// display: flex;
 	div + div{
 		// margin-left: 30px;
 	}
+	img + img{
+		// margin-left: 20px;
+	}
 	img{
 		display: inline-block;
-		width: 100%;
+		width: 24%;
 	}
 
 	
 }
 
-.ba-img-slid{
+// .ba-img-slid{
 	
-	img{
-		width: 100%;
-		height: auto;
-		padding: 0 10px;
-		margin-bottom: 10px;
-	}
-}
+// 	img{
+// 		width: 100%;
+// 		height: auto;
+// 		padding: 0 10px;
+// 		margin-bottom: 10px;
+// 	}
+// }
 
 .ba-img-slid{
 	// display: flex;
@@ -1576,7 +1579,21 @@ position: relative;
 		}
 	}
 }
+
 @media screen and (max-width: 660px){
+	.ba-next-hair{
+		bottom: 42%;
+
+	}
+	.ba-prev-hair{
+		bottom: 53%;
+	}
+
+	.slick-slide{
+		img{
+			width: 49%;
+		}
+	}
 	.ba-section-hair{
 		padding: 0;
 		padding-top: 25px;
@@ -1916,4 +1933,19 @@ position: relative;
 		}
 
 	}
+}
+@media screen and (max-width: 400px){
+	.ba-next-hair{
+		display: none;
+	}
+	.ba-prev-hair{
+		display: none;
+	}
+	.slick-slide{
+		img{
+			width: 100%;
+		}
+	}
+	
+
 }

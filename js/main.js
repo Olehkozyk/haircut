@@ -81,29 +81,32 @@ $(function(){
 
  $(document).ready(function(){
     $('.ba-img__block').slick({
-        rows: 1,
-        // slidesPerRow: 4,
+       
+        // slidesPerRow: 2,
         slide: (".ba-img-vert"),
         // infinity: false,
         slidesToScroll: 1,
-        slidesToShow: 1,
+        slidesToShow: 2,
+        // rows: 2,
         // variableWidth: true,
         // adaptiveHeight:true,
         vertical: true,
-        // verticalSwiping: true,
+        verticalSwiping: true,
         dots: false,
         prevArrow: ".ba-prev-hair",
         nextArrow: ".ba-next-hair",
    
-        // responsive: [
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             slidesToShow: 1,
+        responsive: [
+            {
+                breakpoint: 660,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
                 
-        //         }
-        //       },
-        // ]
+                }
+              },   
+        ]
+        
         
     })
     });
